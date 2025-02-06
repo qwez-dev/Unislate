@@ -2,7 +2,6 @@ import curses
 import sys
 import os
 import re
-from io import StringIO
 
 ##############################
 # Editor Settings
@@ -170,13 +169,14 @@ def prompt_user(stdscr, prompt):
 
 # ASCII art and welcome messages
 ASCII_ART = r"""
-  __  __                   _ _ _   
- |  \/  |                 | (_) |  
- | \  / | ___  _ __   ___ | |_| |_ 
- | |\/| |/ _ \| '_ \ / _ \| | | __|
- | |  | | (_) | | | | (_) | | | |_ 
- |_|  |_|\___/|_| |_|\___/|_|_|\__|
 
+  _    _       _     _       _       
+ | |  | |     (_)   | |     | |      
+ | |  | |_ __  _ ___| | __ _| |_ ___ 
+ | |  | | '_ \| / __| |/ _` | __/ _ \
+ | |__| | | | | \__ \ | (_| | ||  __/
+  \____/|_| |_|_|___/_|\__,_|\__\___|
+                                                   
 developed by qwez with ♥️
 """
 
