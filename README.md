@@ -1,9 +1,9 @@
 <div align="center">
-  <h1>Monolit</h1>
+  <h1>Unislate</h1>
   
   [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-  [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](#)
+  [![Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](#)
   [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#)
 </div>
 
@@ -11,7 +11,7 @@
 
 ## О проекте
 
-**Monolit** — это минималистичный консольный редактор с подсветкой синтаксиса, разработанный для быстрого редактирования файлов прямо в терминале. Приложение поддерживает базовые функции редактирования, навигации и сохранения.
+**Unislate** — это минималистичный консольный редактор с подсветкой синтаксиса, разработанный для быстрого редактирования файлов прямо в терминале. Приложение поддерживает базовые функции редактирования, навигации и сохранения.
 
 ### Особенности
 
@@ -32,25 +32,16 @@
 
 ### Установка из исходников
 
-1. **Клонируйте репозиторий:**
+1. **Установите библиотеку:**
 
    ```bash
-   git clone https://github.com/qwez-source/monolit.git
-   cd monolit
+   pip install unislate
    ```
 
-2. **(Опционально) Создайте виртуальное окружение:**
+2. **Запустите редактор:**
 
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Для Linux/macOS
-   venv\Scripts\activate     # Для Windows
-   ```
-
-3. **Запустите редактор:**
-
-   ```bash
-   python monolit.py [имя_файла]
+   unislate [имя_файла]
    ```
 
 ---
@@ -85,5 +76,5 @@
 ---
 
 <div align="center">
-<sub>Сделано с ♥️ от <a href="https://github.com/qwez=source">Qwez</a></sub>
+<sub>Сделано с ♥️ от <a href="https://github.com/qwez-source">Qwez</a></sub>
 </div>
