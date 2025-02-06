@@ -41,7 +41,7 @@
 2. **Запустите редактор:**
 
    ```bash
-   unislate [имя_файла]
+   unislate example.txt
    ```
 
 ---
