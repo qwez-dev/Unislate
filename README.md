@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="https://github.com/Qwez-source/Unislate/blob/main/demo.gif?raw=true">
+  
   <h1>Unislate</h1>
   
   [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
