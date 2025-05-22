@@ -11,126 +11,126 @@
 
 ---
 
-## О проекте
+## About the project
 
-**Unislate** — это минималистичный консольный редактор с продвинутой подсветкой синтаксиса и набором удобных функций для редактирования текста и исходного кода прямо в терминале.
+**Unislate** is a minimalist console editor with advanced syntax highlighting and a set of convenient functions for editing text and source code directly in the terminal.
 
 ---
 
-## Особенности
+## Features
 
-- **Подсветка синтаксиса:**  
-  Поддержка множества языков, включая:
+- **Syntax Highlighting:**  
+  Support for multiple languages, including:
   - **Python**
   - **JavaScript, TypeScript, JSX, TSX**
   - **C/C++**
   - **Java**
   - **Markdown**  
-  А также базовая подсветка для других текстовых форматов (HTML, CSS, JSON, XML, и пр.).
+  As well as basic highlighting for other text formats (HTML, CSS, JSON, XML, etc.).
 
-- **Удобное редактирование:**  
-  - Ввод символов, удаление (Backspace), создание новой строки (Enter) с сохранением отступов.
-  - Вставка табуляции (4 пробела) через клавишу Tab.
+- **Convenient Editing:**  
+  - Input characters, delete (Backspace), create a new line (Enter) while preserving indentation.
+  - Insert tab (4 spaces) using the Tab key.
 
-- **Выделение текста:**  
-  Используйте комбинацию **Shift + стрелки** для выделения фрагментов текста.
+- **Text Selection:**  
+  Use **Shift + arrow keys** to select text fragments.
 
-- **Буфер обмена:**  
-  - **Копирование:** `Ctrl+C` – копирует выделенный текст (или текущую строку, если выделение отсутствует).
-  - **Вырезание:** `Ctrl+X` – удаляет выделенный текст (или строку, если выделение отсутствует).
-  - **Вставка:** `Ctrl+V` – вставляет содержимое буфера обмена.  
+- **Clipboard:**  
+  - **Copy:** `Ctrl+C` – copies the selected text (or the current line if nothing is selected).
+  - **Cut:** `Ctrl+X` – cuts the selected text (or the line if nothing is selected).
+  - **Paste:** `Ctrl+V` – pastes the clipboard content.  
 
-- **Отмена и повтор действий:**  
-  - **Отмена:** `Ctrl+Z` – шаг назад.
-  - **Повтор:** `Ctrl+Y` – восстановление отменённого действия.
+- **Undo and Redo:**  
+  - **Undo:** `Ctrl+Z` – step back.
+  - **Redo:** `Ctrl+Y` – restores the undone action.
 
-- **Приветственный экран:**  
-  При запуске без указания файла отображается экран с ASCII art и приглашением для начала работы.
+- **Welcome Screen:**  
+  When launched without specifying a file, a screen with ASCII art and a prompt to start working is displayed.
 
-- **Строка состояния:**  
-  В нижней части экрана выводится информация о файле (имя, статус «новый», если файл ещё не сохранён), текущей строке и позиции курсора.
+- **Status Bar:**  
+  The bottom of the screen displays file information (name, "new" status if the file has not yet been saved), current line, and cursor position.
 
 ---
 
-## Установка
+## Installation
 
-### Требования
+### Requirements
 
 - Python 3.6+
-- Терминал, поддерживающий ANSI-цвета и символы Unicode
+- Terminal that supports ANSI colors and Unicode characters
 
-### Установка из исходников
+### Installation from source
 
-1. **Установка пакета:**
+1. **Install package:**
 
    ```bash
    pip install unislate
    ```
 
-2. **Запуск редактора:**
+2. **Run editor:**
 
    ```bash
-   unislate [имя_файла]
+   unislate [filename]
    ```
 
-   Если имя файла не указано, сначала будет показан приветственный экран, после чего создастся новый файл.
+   If the filename is not specified, the welcome screen will be shown first, after which a new file will be created.
 
 ---
 
-## Использование
+## Usage
 
-- **Навигация по тексту:**  
-  Используйте стрелки для перемещения курсора по файлу.
+- **Text Navigation:**  
+  Use arrow keys to move the cursor through the file.
 
-- **Редактирование:**  
-  Просто вводите символы для изменения строки. Для удаления символов используйте Backspace.
+- **Editing:**  
+  Simply type characters to change the line. Use Backspace to delete characters.
 
-- **Новая строка:**  
-  Нажмите Enter для перехода на новую строку. Отступ предыдущей строки автоматически сохраняется.
+- **New Line:**  
+  Press Enter to move to a new line. The indentation of the previous line is automatically preserved.
 
-- **Вставка табуляции:**  
-  Нажмите Tab для добавления отступа (4 пробела).
+- **Insert Tab:**  
+  Press Tab to add an indent (4 spaces).
 
-- **Выделение текста:**  
-  Для выделения текста зажимайте Shift и используйте стрелки.
+- **Text Selection:**  
+  To select text, hold Shift and use the arrow keys.
 
-- **Копирование и вырезание:**  
-  - `Ctrl+C` – копирует выделенный текст или текущую строку.
-  - `Ctrl+X` – вырезает выделенный текст или текущую строку.
+- **Copying and Cutting:**  
+  - `Ctrl+C` – copies the selected text or the current line.
+  - `Ctrl+X` – cuts the selected text or the current line.
 
-- **Вставка:**  
-  `Ctrl+V` – вставляет содержимое буфера обмена.
+- **Pasting:**  
+  `Ctrl+V` – pastes the clipboard content.
 
-- **Отмена/Повтор:**  
-  - `Ctrl+Z` – отменяет последнее изменение.
-  - `Ctrl+Y` – повторяет отменённое действие.
+- **Undo/Redo:**  
+  - `Ctrl+Z` – undoes the last change.
+  - `Ctrl+Y` – redoes the undone action.
 
-- **Сохранение файла:**  
-  `Ctrl+S` – сохраняет изменения. Если файл новый, редактор предложит ввести имя.
+- **Saving File:**  
+  `Ctrl+S` – saves changes. If the file is new, the editor will prompt for a name.
 
-- **Выход из редактора:**  
-  `Ctrl+Q` – выход из программы. При наличии несохранённых изменений появится запрос на подтверждение выхода без сохранения.
-
----
-
-## Вклад
-
-Мы рады любым идеям и улучшениям!
-
-1. **Форкните** репозиторий.
-2. Создайте новую **ветку** (например, `git checkout -b feature/YourFeature`).
-3. **Закоммитьте** изменения (например, `git commit -m 'Добавить новую функцию'`).
-4. **Запушьте** ветку (`git push origin feature/YourFeature`).
-5. Откройте **Pull Request** для обсуждения и слияния изменений.
+- **Exiting Editor:**  
+  `Ctrl+Q` – exits the program. If there are unsaved changes, a confirmation prompt to exit without saving will appear.
 
 ---
 
-## Лицензия
+## Contribution
 
-Этот проект распространяется под лицензией [MIT License](LICENSE).
+We welcome any ideas and improvements!
+
+1. **Fork** the repository.
+2. Create a new **branch** (e.g., `git checkout -b feature/YourFeature`).
+3. **Commit** your changes (e.g., `git commit -m 'Add a new feature'`).
+4. **Push** the branch (`git push origin feature/YourFeature`).
+5. Open a **Pull Request** for discussion and merging of changes.
+
+---
+
+## License
+
+This project is distributed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-  <sub>Сделано с ♥️ от <a href="https://github.com/qwez-source">Qwez</a></sub>
+  <sub>Made with ♥️ by <a href="https://github.com/qwez-source">Qwez</a></sub>
 </div>
