@@ -132,5 +132,5 @@ This project is distributed under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <sub>Made with ♥️ by <a href="https://github.com/qwez-source">Qwez</a></sub>
+  <sub>Made with ♥️ by <a href="https://github.com/qwez-dev">Qwez</a></sub>
 </div>
